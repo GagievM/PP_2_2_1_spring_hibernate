@@ -4,6 +4,7 @@ import hiber.model.Car;
 import hiber.model.User;
 
 import java.util.List;
+import java.util.Optional;
 
 public interface UserDao {
    void add(User user);
@@ -12,5 +13,5 @@ public interface UserDao {
 
    void addCar(Car car);
 
-   User carOwner(String model, int series);
+   Optional<Object> getUserByModelAndSeries(String model, int series);
 }

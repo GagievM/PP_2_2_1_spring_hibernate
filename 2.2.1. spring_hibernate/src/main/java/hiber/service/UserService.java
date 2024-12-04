@@ -3,10 +3,11 @@ package hiber.service;
 import hiber.model.User;
 
 import java.util.List;
+import java.util.Optional;
 
 
 public interface UserService {
-    User carOwner(String model, int series);
+    Optional<Object> carOwner(String model, int series);
 
     User add(User user);
 
